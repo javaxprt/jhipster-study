@@ -1,6 +1,6 @@
 
 
-# Shakeel Notes:
+# Jhipster Notes:
 docker run -d --name pg5432 -e POSTGRES_PASSWORD=postgres -p 5432:5432 postgres
 
 ./mvnw liquibase:diff
