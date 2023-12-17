@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 0,
+    "applicationType": "gateway",
+    "applications": {
+      "invoice": {
+        "applicationIndex": 2,
+        "serverPort": "8082"
+      },
+      "notification": {
+        "applicationIndex": 3,
+        "serverPort": "8083"
+      },
+      "product": {
+        "applicationIndex": 1,
+        "serverPort": "8081"
+      }
+    },
+    "authenticationType": "jwt",
+    "baseName": "store",
+    "buildTool": "maven",
+    "cacheProvider": "no",
+    "clientFramework": "react",
+    "devDatabaseType": "postgresql",
+    "devServerPort": 9060,
+    "enableSwaggerCodegen": true,
+    "entities": ["Customer", "Product", "ProductCategory", "ProductOrder", "OrderItem", "Invoice", "Shipment", "Notification"],
+    "jhipsterVersion": "8.1.0",
+    "jwtSecretKey": "NjM3MzYwNmJhM2ZlMTVhM2Q1MjYyMzZjZTM5Mzc5OTZlNzgwYjk4ZWU1NWRkZjkyODFhNzIwYWVkMTBmMGYyOGJjNTAwZWU2MmMzYzJlODI5MmZkNWFjN2U5NmVmZGM1OGRhMzFjNTc4MTI0OTE2NWEwMDdiNWVhZWJhN2Y5ZTE=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1702726061000,
+    "monorepository": true,
+    "nativeLanguage": "en",
+    "packageFolder": "com/okta/developer/store",
+    "packageName": "com.okta.developer.store",
+    "prodDatabaseType": "postgresql",
+    "reactive": true,
+    "serviceDiscoveryType": "no",
+    "skipCommitHook": true
+  }
+}

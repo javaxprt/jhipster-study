@@ -1,0 +1,28 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 2,
+    "applicationType": "microservice",
+    "authenticationType": "jwt",
+    "baseName": "invoice",
+    "buildTool": "maven",
+    "cacheProvider": "no",
+    "devDatabaseType": "postgresql",
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": true,
+    "entities": ["Invoice", "Shipment"],
+    "jhipsterVersion": "8.1.0",
+    "jwtSecretKey": "MGI3ODkzM2RjMWJiZmRjMTNlZTY3MTIzNjMzZmM1NjNiOTc4MTVjNGQ3NTgxNTQxNTgxY2Y2MDk5NDFiMTZkOGExMzE2NGQxMGQyN2U1OTE0ZTkyZDQxMWI1OTk0N2MwNzMyOTZmODQzMWVmYmFjNWI5NmRhNzE5ODdiYTViOGQ=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1702725701000,
+    "monorepository": true,
+    "nativeLanguage": "en",
+    "packageFolder": "com/okta/developer/invoice",
+    "packageName": "com.okta.developer.invoice",
+    "prodDatabaseType": "postgresql",
+    "serverPort": "8082",
+    "serviceDiscoveryType": "no",
+    "skipClient": true,
+    "skipCommitHook": true,
+    "skipUserManagement": true
+  }
+}

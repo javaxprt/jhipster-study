@@ -1,0 +1,33 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="admin (generated)" id="1702780791947-1">
+        <dropForeignKeyConstraint baseTableName="jhi_user_authority" constraintName="fk_authority_name"/>
+    </changeSet>
+    <changeSet author="admin (generated)" id="1702780791947-2">
+        <dropForeignKeyConstraint baseTableName="customer" constraintName="fk_customer__user_id"/>
+    </changeSet>
+    <changeSet author="admin (generated)" id="1702780791947-3">
+        <dropForeignKeyConstraint baseTableName="jhi_user_authority" constraintName="fk_user_id"/>
+    </changeSet>
+    <changeSet author="admin (generated)" id="1702780791947-4">
+        <dropUniqueConstraint constraintName="ux_customer__user_id" tableName="customer"/>
+    </changeSet>
+    <changeSet author="admin (generated)" id="1702780791947-5">
+        <dropUniqueConstraint constraintName="ux_user_email" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="admin (generated)" id="1702780791947-6">
+        <dropUniqueConstraint constraintName="ux_user_login" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="admin (generated)" id="1702780791947-7">
+        <dropTable tableName="customer"/>
+    </changeSet>
+    <changeSet author="admin (generated)" id="1702780791947-8">
+        <dropTable tableName="jhi_authority"/>
+    </changeSet>
+    <changeSet author="admin (generated)" id="1702780791947-9">
+        <dropTable tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="admin (generated)" id="1702780791947-10">
+        <dropTable tableName="jhi_user_authority"/>
+    </changeSet>
+</databaseChangeLog>

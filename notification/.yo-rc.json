@@ -1,0 +1,28 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 3,
+    "applicationType": "microservice",
+    "authenticationType": "jwt",
+    "baseName": "notification",
+    "buildTool": "maven",
+    "cacheProvider": "no",
+    "databaseType": "postgresql",
+    "devDatabaseType": "postgresql",
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": true,
+    "entities": ["Notification"],
+    "jhipsterVersion": "8.1.0",
+    "jwtSecretKey": "OTU5ODc2MjdlOGRkZjUzZjIxYzkzMmU4MTJiNGZlN2QwODBiNjhmYTBiNjhmNDUzOTk3MzYxM2RiMjg1OTI3MGI1ODVjZDIwOThiMDkxZTM1Y2IwYjQwMTM3NGY3MjExMTMyZWQ4MDk2M2I2ZWUwZmZmOGQyMmM5YTdlMzFmMzY=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1702725641000,
+    "monorepository": true,
+    "nativeLanguage": "en",
+    "packageFolder": "com/okta/developer/notification",
+    "packageName": "com.okta.developer.notification",
+    "serverPort": "8083",
+    "serviceDiscoveryType": "no",
+    "skipClient": true,
+    "skipCommitHook": true,
+    "skipUserManagement": true
+  }
+}

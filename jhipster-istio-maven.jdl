@@ -89,7 +89,6 @@ enum Gender {
 
 relationship OneToOne {
   Customer to User with builtInEntity
-  Customer{user(login) required} to User
 }
 
 service Customer with serviceClass

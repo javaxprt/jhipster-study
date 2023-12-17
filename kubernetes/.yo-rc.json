@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "appsFolders": [
+      "store",
+      "invoice",
+      "notification",
+      "product"
+    ],
+    "directoryPath": "../",
+    "clusteredDbApps": [],
+    "serviceDiscoveryType": "no",
+    "dockerRepositoryName": "local",
+    "dockerPushCommand": "docker push",
+    "kubernetesNamespace": "jhipster",
+    "kubernetesServiceType": "Ingress",
+    "kubernetesUseDynamicStorage": false,
+    "kubernetesStorageClassName": "",
+    "ingressDomain": "bismillah.istio.nip.io",
+    "monitoring": "no",
+    "istio": true,
+    "deploymentType": "kubernetes",
+    "ingressType": "nginx"
+  }
+}
