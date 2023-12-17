@@ -5,6 +5,7 @@ docker run -d --name pg5432 -e POSTGRES_PASSWORD=postgres -p 5432:5432 postgres
 
 ./mvnw liquibase:diff
 
+`./mvnw spring-boot:run -Pdev -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005"`
 
 This application was generated using JHipster 8.1.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.1.0](https://www.jhipster.tech/documentation-archive/v8.1.0).
 
