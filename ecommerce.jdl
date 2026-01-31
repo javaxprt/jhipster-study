@@ -1,0 +1,31 @@
+
+entity Order {
+    code String required unique,
+    placedDate Instant required,
+    status OrderStatus required,
+    totalPrice BigDecimal min(0)
+}
+
+entity OrderItem {
+    quantity Integer required min(0),
+    totalPrice BigDecimal required min(0),
+    productId String required
+}
+
+enum OrderStatus {
+    COMPLETED, PENDING, CANCELLED
+}
+
+relationship OneToMany {
+    Order{orderItem} to OrderItem{order}
+}
+
+relationship ManyToOne {
+    Order{user(login)} to User with builtInEntity
+}
+
+// Set pagination options
+paginate Order, OrderItem with pagination
+
+// Set service options to all except few
+service all with serviceImpl
