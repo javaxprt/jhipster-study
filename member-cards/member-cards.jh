@@ -1,0 +1,16 @@
+
+entity Member {
+    firstName String required,
+    lastName String required,
+    email String required pattern(/^[^@\s]+@[^@\s]+\.[^@\s]+$/)
+}
+
+entity Card {
+    cardNumber String required,
+    expirationDate LocalDate required,
+    cvv String required
+}
+
+relationship OneToMany {
+    Member{card} to Card{member}
+}
