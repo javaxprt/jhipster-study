@@ -1,0 +1,68 @@
+type Product {
+    id: ID!
+    name: String!
+    description: String!
+    price: Float!
+    itemSize: Size!
+    image: String
+    imageContentType: String
+    productCategory: ProductCategory
+}
+
+type ProductCategory {
+    id: ID!
+    name: String!
+    description: String
+}
+
+type ProductOrder {
+    id: ID!
+    placedDate: String!
+    status: OrderStatus!
+    code: String!
+    invoiceId: Long
+    customer: String!
+    orderItems: [OrderItem]
+}
+
+type OrderItem {
+    id: ID!
+    quantity: Int!
+    totalPrice: Float!
+    status: OrderItemStatus!
+    product: Product
+    productOrder: ProductOrder
+}
+
+enum Size {
+    S
+    M
+    L
+    XL
+    XXL
+}
+
+enum OrderStatus {
+    COMPLETED
+    PENDING
+    CANCELLED
+}
+
+enum OrderItemStatus {
+    AVAILABLE
+    OUT_OF_STOCK
+    BACK_ORDER
+}
+
+scalar Long
+
+type Query {
+    products: [Product]
+    product(id: ID!): Product
+    productCategories: [ProductCategory]
+    productCategory(id: ID!): ProductCategory
+    productOrders: [ProductOrder]
+    productOrder(id: ID!): ProductOrder
+    orderItems: [OrderItem]
+    orderItem(id: ID!): OrderItem
+}

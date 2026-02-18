@@ -1,0 +1,35 @@
+{
+  "annotations": {
+    "changelogDate": "20260131154025"
+  },
+  "applications": ["memberCardsApp"],
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "pattern"],
+      "fieldValidateRulesPattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+    }
+  ],
+  "name": "Member",
+  "relationships": [
+    {
+      "otherEntityName": "card",
+      "otherEntityRelationshipName": "member",
+      "relationshipName": "card",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

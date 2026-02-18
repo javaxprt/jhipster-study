@@ -1,4 +1,18 @@
 
+application {
+  config {
+    baseName memberCardsApp
+    applicationType monolith
+    packageName com.mycompany.membercards
+    authenticationType jwt
+    prodDatabaseType postgresql
+    devDatabaseType h2Disk
+    buildTool maven
+    clientFramework react
+  }
+  entities Member, Card
+}
+
 entity Member {
     firstName String required,
     lastName String required,

@@ -1,0 +1,20 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "memberCardsApp",
+    "buildTool": "maven",
+    "clientFramework": "react",
+    "devDatabaseType": "h2Disk",
+    "entities": ["Member", "Card"],
+    "jhipsterVersion": "8.11.0",
+    "jwtSecretKey": "Y2U4NzI1M2JhOWUxMDlkNGZjNDgxYjkwOGVkYzBmYjAzNDI4YzFhOTQxMTk5MWZhODc2YWU5N2NlZjFjMjVlZGEyZjAzZGVlOGQ2NzgwMDMxMzg4NjZkOGY0ODM2YTcxZmJjYTgxYzQxYTdmMzVjZGMxMDQ3ZTZjNDkyYTk5MDI=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1769874085000,
+    "monorepository": true,
+    "nativeLanguage": "en",
+    "packageName": "com.mycompany.membercards",
+    "prodDatabaseType": "postgresql",
+    "skipCommitHook": true
+  }
+}

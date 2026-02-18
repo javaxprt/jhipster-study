@@ -1,0 +1,14 @@
+type Customer {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    email: String!
+    telephone: String!
+}
+
+scalar Long
+
+type Query {
+    customers: [Customer]
+    customer(id: ID!): Customer
+}
